@@ -1,0 +1,66 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.so
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+.Python
+
+# Environment files (use Coolify env vars)
+.env
+.env.*
+!.env.example
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated files
+graph.png
+
+# Misc
+*.bak
+*.tmp

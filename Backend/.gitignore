@@ -1,0 +1,68 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# Build artifacts
+*.egg-info/
+*.egg
+build/
+dist/
+wheels/
+
+# Logs
+*.log
+logs/
+
+# Testing & Coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Misc
+*.bak
+*.tmp
