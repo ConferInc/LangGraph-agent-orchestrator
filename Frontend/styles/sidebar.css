@@ -57,6 +57,11 @@
   background-color: #f2f2f2;
 }
 
+.conversation-item.active {
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+}
+
 .conversation-icon {
   font-size: 16px;
 }
@@ -107,6 +112,11 @@
   .conversation-item:hover,
   .sidebar-icon-btn:hover {
     background-color: #404040;
+  }
+
+  .conversation-item.active {
+    background-color: #3f3f3f;
+    border: 1px solid #525252;
   }
 
   .conversations-title {
