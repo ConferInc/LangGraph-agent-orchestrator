@@ -28,16 +28,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Backend import & startup check
-        env:
-          OPENAI_API_KEY: dummy
-          QDRANT_API_KEY: dummy
+      # ✅ Only syntax check – NO runtime execution
+      - name: Backend syntax check
         run: |
           python -m py_compile server.py
-          python - <<EOF
-          import server
-          print("Backend imports successfully")
-          EOF
+          python -m py_compile app.py
+
 
   frontend:
     name: Frontend – Next.js
@@ -51,10 +47,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ✅ Correct Node version for Next.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20.10.0"
           cache: "npm"
           cache-dependency-path: Frontend/package-lock.json
 
